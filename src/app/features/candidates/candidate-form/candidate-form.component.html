@@ -1,0 +1,21 @@
+<!-- src/app/features/candidates/candidate-form/candidate-form.component.html -->
+<div class="candidate-form">
+    <h2>Add New Candidate</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" [(ngModel)]="candidate.name" name="name" required />
+      </div>
+      <div>
+        <label for="position">Position:</label>
+        <input
+          id="position"
+          [(ngModel)]="candidate.position"
+          name="position"
+          required
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
